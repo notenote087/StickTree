@@ -19,7 +19,8 @@
         <activity android:name=".online_login" />
         <activity android:name=".online_updateTree" />
         <activity android:name=".online_selectTree" />
-        <activity android:name=".offline_school"></activity>
+        <activity android:name=".offline_school" />
+        <activity android:name=".offline_detail"></activity>
     </application>
 
 </manifest>
