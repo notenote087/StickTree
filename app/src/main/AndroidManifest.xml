@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".online_login" />
-        <activity android:name=".online_updateTree"></activity>
+        <activity android:name=".online_updateTree" />
+        <activity android:name=".online_selectTree"></activity>
     </application>
 
 </manifest>
