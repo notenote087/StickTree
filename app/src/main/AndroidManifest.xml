@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".online_login" />
         <activity android:name=".online_updateTree" />
-        <activity android:name=".online_selectTree"></activity>
+        <activity android:name=".online_selectTree" />
+        <activity android:name=".offline_school"></activity>
     </application>
 
 </manifest>
