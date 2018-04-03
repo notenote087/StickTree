@@ -87,6 +87,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/G1" />
+        app:srcCompat="@color/A200" />
 
 </android.support.constraint.ConstraintLayout>
