@@ -78,9 +78,21 @@ public class online_login extends AppCompatActivity {
                             //   JSONObject j = response.getJSONObject("dataUser");
                             String result = j.getString("status");
                             // j.getJSONObject("dataUser");
-                            String result2 = j.getString("messsage");
-                              Toast.makeText(getApplicationContext(), result + " " +result2 , Toast.LENGTH_LONG).show();
+                            String result2 = j.getString("status_meesage");
+                           // Toast.makeText(getApplicationContext(), result + " " +result2 , Toast.LENGTH_LONG).show();
 
+                            switch (result){
+                                case "true":
+                                    Toast.makeText(getApplicationContext(), j.getString("status_meesage") + j.getString("school_id"), Toast.LENGTH_LONG).show();
+                                    Intent intent = new Intent(online_login.this,online_updateTree.class);
+                                    intent.putExtra("school_name", j.getString("school_name"));
+                                    startActivity(intent);
+
+                                    break;
+                                case "false":
+                                    Toast.makeText(getApplicationContext(), j.getString("status_meesage"), Toast.LENGTH_LONG).show();
+                                    break;
+                            }
                           //  for (int i = 0 ; i<myJsonArray.length(); i++) {
                            //     JSONObject json_data = myJsonArray.getJSONObject(i);
                               //  email.setText("-------- "+json_data.getString("tree_name"));
@@ -136,6 +148,17 @@ public class online_login extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
     }
 
     public void findID(){
