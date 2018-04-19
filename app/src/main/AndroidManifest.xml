@@ -4,6 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +17,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity android:name=".online_Insert">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +34,14 @@
         <activity android:name=".offline_school" />
         <activity android:name=".offline_detail" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".online_main_manage"></activity>
+        <activity android:name=".online_main_manage" />
+
+        <service
+            android:name=".GPS"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".BarcodeCaptureActivity"></activity>
     </application>
 
 </manifest>
