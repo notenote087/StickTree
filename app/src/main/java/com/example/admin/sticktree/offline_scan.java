@@ -6,21 +6,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class offline_school extends AppCompatActivity {
+public class offline_scan extends AppCompatActivity {
 
-    Button submit ;
+    Button scanqrcode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.offline_school);
+        setContentView(R.layout.offline_scan);
 
-        submit = (Button) findViewById(R.id.submit);
+        scanqrcode = (Button) findViewById(R.id.scanqrcode);
 
-        submit.setOnClickListener(new View.OnClickListener() {
+        scanqrcode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(offline_school.this,offline_scan.class);
+                Intent intent = new Intent(offline_scan.this,offline_Data.class);
                 startActivity(intent);
             }
         });

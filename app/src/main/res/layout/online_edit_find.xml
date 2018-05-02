@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="แก้ไขข้อมูลพรรณไม้"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="64dp"
+            >
+
+            <EditText
+                android:id="@+id/treecode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_edit_text"
+                android:elevation="3dp"
+                android:hint="รหัสพรรณไม้"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:text="ยืนยัน"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/scanqrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/A400"
+                android:padding="15dp"
+                android:text="Scan QR CODE"
+                android:textColor="@color/White" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

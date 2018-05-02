@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.admin.sticktree.login">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="แก้ไขข้อมูลพรรณไม้"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="64dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="รหัสพรรณไม้ : "
+                android:padding="15dp"
+
+                />
+
+
+            <EditText
+                android:id="@+id/tree_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_edit_text"
+                android:elevation="3dp"
+                android:hint="ชื่อพรรณไม้"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/localname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_edit_text"
+                android:elevation="3dp"
+                android:hint="ชื่อท้องถิ่น"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/charecter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_edit_text"
+                android:elevation="3dp"
+                android:hint="ลักษณะ"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ตำแหน่งพรรณไม้"
+                android:padding="10dp"
+
+                />
+
+            <EditText
+                android:id="@+id/lat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_edit_text"
+                android:elevation="3dp"
+                android:hint="ตำแหน่งละติจูด"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+
+            <EditText
+                android:id="@+id/lng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_edit_text"
+                android:elevation="3dp"
+                android:hint="ตำแหน่งลองจิจูด"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+
+            <Button
+                android:id="@+id/gps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+
+                android:text="รับตำแหน่งจาก GPS"
+                android:textColor="@color/White" />
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/colorPrimaryDark"
+
+                android:text="ยืนยัน"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
 
@@ -16,32 +18,31 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".online_Insert">
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".online_login" />
-        <activity android:name=".online_updateTree" />
-        <activity android:name=".online_selectTree" />
-        <activity android:name=".offline_school" />
-        <activity android:name=".offline_detail" />
+        <activity
+            android:name=".online_main"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".online_main_manage" />
-
-        <service
-            android:name=".GPS"
-            android:enabled="true"
-            android:exported="true" />
-
-        <activity android:name=".BarcodeCaptureActivity"></activity>
+        <activity android:name=".login" />
+        <activity android:name=".offline_school" />
+        <activity android:name=".offline_scan" />
+        <activity android:name=".offline_Data" />
+        <activity android:name=".online_add" />
+        <activity android:name=".online_edit_find" />
+        <activity android:name=".online_edit" />
+        <activity android:name=".online_delete"></activity>
     </application>
 
 </manifest>
