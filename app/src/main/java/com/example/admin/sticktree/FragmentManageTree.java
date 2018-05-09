@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 /**
@@ -44,14 +45,20 @@ public class FragmentManageTree extends Fragment {
                 startActivity(intent);
             }
         });
-
+        try{
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(getActivity(),online_edit_find.class);
                 startActivity(intent);
+
             }
         });
+
+        }catch (Exception e){
+            Toast.makeText(getActivity(), e.toString(), Toast.LENGTH_SHORT).show();
+        }
 
         search.setOnClickListener(new View.OnClickListener() {
             @Override

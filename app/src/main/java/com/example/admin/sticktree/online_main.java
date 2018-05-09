@@ -94,7 +94,12 @@ public class online_main extends AppCompatActivity
 
         } else if (id == R.id.nav_update_tree) {
 
-        } else if (id == R.id.logout) {
+        }
+
+        else if(id == R.id.scanqrcode){
+
+
+        }else if (id == R.id.logout) {
 
         }
 

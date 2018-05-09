@@ -45,7 +45,11 @@
                 android:background="@drawable/shape_edit_text"
                 android:elevation="3dp"
                 android:hint="รหัสพรรณไม้"
+                android:inputType="text"
                 android:maxLines="1"
+                android:lines="1"
+                android:maxLength="30"
+
                 android:padding="10dp"
                 android:textAlignment="center" />
 

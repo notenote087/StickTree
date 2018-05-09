@@ -38,6 +38,7 @@
             >
 
             <TextView
+                android:id="@+id/treecode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="รหัสพรรณไม้ : "
@@ -47,14 +48,17 @@
 
 
             <EditText
-                android:id="@+id/tree_name"
+                android:id="@+id/treename"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/shape_edit_text"
                 android:elevation="3dp"
                 android:hint="ชื่อพรรณไม้"
+                android:inputType="text"
                 android:maxLines="1"
+                android:lines="1"
+                android:maxLength="30"
                 android:padding="5dp"
                 android:textAlignment="center" />
 
@@ -66,12 +70,15 @@
                 android:background="@drawable/shape_edit_text"
                 android:elevation="3dp"
                 android:hint="ชื่อท้องถิ่น"
+                android:inputType="text"
                 android:maxLines="1"
+                android:lines="1"
+                android:maxLength="30"
                 android:padding="5dp"
                 android:textAlignment="center" />
 
             <EditText
-                android:id="@+id/charecter"
+                android:id="@+id/character"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -98,7 +105,10 @@
                 android:background="@drawable/shape_edit_text"
                 android:elevation="3dp"
                 android:hint="ตำแหน่งละติจูด"
+
                 android:maxLines="1"
+                android:lines="1"
+
                 android:padding="5dp"
                 android:textAlignment="center" />
 
@@ -111,7 +121,10 @@
                 android:background="@drawable/shape_edit_text"
                 android:elevation="3dp"
                 android:hint="ตำแหน่งลองจิจูด"
+
                 android:maxLines="1"
+                android:lines="1"
+                android:maxLength="30"
                 android:padding="5dp"
                 android:textAlignment="center" />
 

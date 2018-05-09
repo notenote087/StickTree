@@ -12,6 +12,11 @@
             android:id="@+id/nav_update_tree"
 
             android:title="อัพเดทการเจริญเติบโต" />
+
+        <item
+            android:id="@+id/scanqrcode"
+
+            android:title="SCAN QRCODE" />
         <item
             android:id="@+id/logout"
             android:icon="@drawable/ic_menu_slideshow"

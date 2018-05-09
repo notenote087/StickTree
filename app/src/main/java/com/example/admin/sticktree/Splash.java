@@ -21,12 +21,12 @@ public class Splash extends AppCompatActivity {
 
                 SharedPreferences pref = getApplicationContext().getSharedPreferences("login",MODE_PRIVATE);
                 boolean status_login = pref.getBoolean("login",false);
-                if(!status_login) { // login
-                    Intent intent = new Intent(Splash.this, MainActivity.class);
+                if(status_login) { // login
+                    Intent intent = new Intent(Splash.this, online_main.class);
                     startActivity(intent);
                     finish();
                 }
-                else if(status_login){  // !login
+                else if(!status_login){  // !login
                     Intent intent = new Intent(Splash.this, MainActivity.class);
                     startActivity(intent);
                     finish();

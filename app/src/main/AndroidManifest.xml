@@ -42,7 +42,8 @@
         <activity android:name=".online_add" />
         <activity android:name=".online_edit_find" />
         <activity android:name=".online_edit" />
-        <activity android:name=".online_delete"></activity>
+        <activity android:name=".online_delete" />
+        <activity android:name=".SimpleScannerActivity"></activity>
     </application>
 
 </manifest>

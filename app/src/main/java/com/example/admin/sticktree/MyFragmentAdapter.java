@@ -26,7 +26,7 @@ public class MyFragmentAdapter extends FragmentStatePagerAdapter {
     public int getCount() {return 2;}
 
     public CharSequence getPageTitle(int position){
-        String[] tabs = {"ManageTree","UpdateTree"};
+        String[] tabs = {"จัดการพรรณไม้","อัพเดทการเจริญเติบโต"};
         return tabs[position];
     }
 }

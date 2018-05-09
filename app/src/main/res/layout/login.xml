@@ -45,7 +45,10 @@
                 android:background="@drawable/shape_edit_text"
                 android:elevation="3dp"
                 android:hint="อีเมลล์"
+                android:inputType="textEmailAddress"
                 android:maxLines="1"
+                android:lines="1"
+                android:maxLength="40"
                 android:padding="10dp"
                 android:textAlignment="center" />
 
@@ -57,7 +60,10 @@
                 android:background="@drawable/shape_edit_text"
                 android:elevation="3dp"
                 android:hint="รหัสผ่าน"
+                android:inputType="textPassword"
                 android:maxLines="1"
+                android:lines="1"
+                android:maxLength="40"
                 android:padding="10dp"
                 android:textAlignment="center" />
 
