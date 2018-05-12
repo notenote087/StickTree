@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    >
+    tools:context="com.example.admin.sticktree.login">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ลบข้อมูลพรรณไม้"
+                android:text="อัพเดทการเจริญเติบโต"
                 android:layout_centerInParent="true"
                 android:textColor="@android:color/white"
                 android:textSize="30dp"
@@ -37,41 +37,87 @@
             android:paddingTop="64dp"
             >
 
+            <TextView
+                android:id="@+id/tree_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tree_code"
+                android:padding="10dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tree_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tree_name"
+                android:padding="10dp"
+
+                />
+
+
+
             <EditText
-                android:id="@+id/treecode_delete"
+                android:id="@+id/detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/shape_edit_text"
                 android:elevation="3dp"
-                android:hint="รหัสพรรณไม้"
-                android:inputType="text"
-                android:maxLines="1"
-                android:lines="1"
-                android:maxLength="30"
+                android:hint="รายละเอียดการอัพเดท"
 
-                android:padding="10dp"
+                android:padding="30dp"
                 android:textAlignment="center" />
+
+
+
+            <TextView
+                android:id="@+id/photo_tree_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="รูปภาพพรรณไม้"
+                android:padding="10dp"
+
+                />
+
+            <Button
+                android:id="@+id/select_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+
+                android:text="เลือกรูป"
+                android:textColor="@color/White" />
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="centerCrop"
+                    />
+
+
+            </LinearLayout>
 
             <Button
                 android:id="@+id/submit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="@color/colorAccent"
+                android:background="@color/colorPrimaryDark"
+
                 android:text="ยืนยัน"
                 android:textColor="@color/White" />
-
-            <Button
-                android:id="@+id/scanqrcode"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:background="@color/A400"
-                android:padding="15dp"
-                android:text="Scan QR CODE"
-                android:textColor="@color/White" />
-
 
         </LinearLayout>
 

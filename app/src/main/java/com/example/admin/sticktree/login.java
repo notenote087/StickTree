@@ -34,7 +34,7 @@ public class login extends AppCompatActivity {
     ProgressDialog prg;
 
     private String TAG = MainActivity.class.getSimpleName();
-    private static final String URL = "http://192.168.1.6/api/login";
+    private static final String URL = "http://192.168.1.5/api/login";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +73,8 @@ public class login extends AppCompatActivity {
                                        editor.putBoolean("login", true);  // login status check in splash screen
                                        String fullname = j.getString("firstname") + " " + j.getString("lastname");
                                        editor.putString("name", fullname);
-                                       editor.putString("school_nmame", j.getString("school_name"));
+                                       editor.putString("school_id", j.getString("school_id"));
+                                       editor.putString("school_name", j.getString("school_name"));
                                        editor.commit();
 
                                        Intent intent = new Intent(login.this, online_main.class);

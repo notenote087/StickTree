@@ -43,7 +43,10 @@
         <activity android:name=".online_edit_find" />
         <activity android:name=".online_edit" />
         <activity android:name=".online_delete" />
-        <activity android:name=".SimpleScannerActivity"></activity>
+        <activity android:name=".online_update_growth" />
+        <activity android:name=".online_findtreecode_updategrowth" />
+        <activity android:name=".online_findqrcode_updategrowth" />
+        <activity android:name=".online_search"></activity>
     </application>
 
 </manifest>

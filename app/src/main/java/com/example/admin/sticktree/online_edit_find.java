@@ -40,7 +40,7 @@ public class online_edit_find extends AppCompatActivity implements ZXingScannerV
     EditText treecode;
 
     private String TAG = MainActivity.class.getSimpleName();
-    private static final String URL = "http://192.168.1.6/api/find_tree";
+    private static final String URL = "http://10.80.45.10/api/find_tree";
     ProgressDialog prg ;
 
     private ZXingScannerView mScannerView;
@@ -104,7 +104,7 @@ public class online_edit_find extends AppCompatActivity implements ZXingScannerV
                                     intent.putExtra("lat",j.getString("lat"));
                                     intent.putExtra("lng",j.getString("lng"));
                                     intent.putExtra("id",j.getString("id"));
-                                    Toast.makeText(online_edit_find.this, j.getString("id"), Toast.LENGTH_SHORT).show();
+                               //     Toast.makeText(online_edit_find.this, j.getString("id"), Toast.LENGTH_SHORT).show();
                                     startActivity(intent);
                                     finish();
                                     break;
@@ -151,14 +151,6 @@ public class online_edit_find extends AppCompatActivity implements ZXingScannerV
             case R.id.scanqrcode:
                 try{
                     if (ActivityCompat.checkSelfPermission(online_edit_find.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED ) {
-
-                        //    ActivityCompat#requestPermissions
-                        // here to request the missing permissions, and then overriding
-                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                        //                                          int[] grantResults)
-                        // to handle the case where the user grants the permission. See the documentation
-                        // for ActivityCompat#requestPermissions for more details.
-                        //return;
                         ActivityCompat.requestPermissions(online_edit_find.this, new String[]{android.Manifest.permission.CAMERA}, REQUEST_CAMERA);
                     }else{
                         mScannerView = new ZXingScannerView(getApplicationContext());

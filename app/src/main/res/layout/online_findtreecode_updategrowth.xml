@@ -7,6 +7,8 @@
 
     >
 
+
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="180dp">
@@ -14,10 +16,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ลบข้อมูลพรรณไม้"
+                android:text="อัพเดทการเจริญเติบโต"
                 android:layout_centerInParent="true"
                 android:textColor="@android:color/white"
                 android:textSize="30dp"
@@ -30,6 +34,8 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" >
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -37,8 +43,17 @@
             android:paddingTop="64dp"
             >
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ค้นหาโดยใช้รหัสพรรณไม้"
+                android:padding="10dp"
+
+                />
+
+
             <EditText
-                android:id="@+id/treecode_delete"
+                android:id="@+id/tree_code_find"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -49,7 +64,6 @@
                 android:maxLines="1"
                 android:lines="1"
                 android:maxLength="30"
-
                 android:padding="10dp"
                 android:textAlignment="center" />
 
@@ -62,15 +76,7 @@
                 android:text="ยืนยัน"
                 android:textColor="@color/White" />
 
-            <Button
-                android:id="@+id/scanqrcode"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:background="@color/A400"
-                android:padding="15dp"
-                android:text="Scan QR CODE"
-                android:textColor="@color/White" />
+
 
 
         </LinearLayout>
