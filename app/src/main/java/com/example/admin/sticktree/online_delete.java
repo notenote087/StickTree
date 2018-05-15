@@ -40,7 +40,8 @@ public class online_delete extends AppCompatActivity implements ZXingScannerView
     private static final int REQUEST_CAMERA = 1;
 
     private String TAG = MainActivity.class.getSimpleName();
-    private static final String URL = "http://192.168.1.5/api/delete_tree";
+    //private static final String URL = "http://192.168.1.5/api/delete_tree";
+    private static final String URL = "http://10.80.45.10/api/delete_tree";
 
     String result_scan;
 

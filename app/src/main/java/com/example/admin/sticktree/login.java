@@ -34,7 +34,8 @@ public class login extends AppCompatActivity {
     ProgressDialog prg;
 
     private String TAG = MainActivity.class.getSimpleName();
-    private static final String URL = "http://192.168.1.5/api/login";
+   // private static final String URL = "http://192.168.1.5/api/login";
+   private static final String URL = "http://10.80.45.10/api/login";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

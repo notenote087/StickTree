@@ -44,7 +44,8 @@ import java.util.Map;
 
 public class online_update_growth extends AppCompatActivity implements View.OnClickListener{
 
-    private static final String URL = "http://192.168.1.5/api/update_growth";
+ //   private static final String URL = "http://192.168.1.5/api/update_growth";
+ private static final String URL = "http://10.80.45.10/api/update_growth";
 
     Button select_photo,submit;
     EditText detail;

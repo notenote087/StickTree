@@ -26,7 +26,9 @@ import java.util.Map;
 public class online_findtreecode_updategrowth extends AppCompatActivity {
 
     private String TAG = MainActivity.class.getSimpleName();
-    private static final String URL = "http://192.168.1.5/api/find_tree";
+    //private static final String URL = "http://192.168.1.5/api/find_tree";
+    private static final String URL = "http://10.80.45.10/api/find_tree";
+
 
     EditText tree_code ;
     Button submit ;

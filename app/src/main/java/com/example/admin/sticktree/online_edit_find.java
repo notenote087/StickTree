@@ -40,7 +40,8 @@ public class online_edit_find extends AppCompatActivity implements ZXingScannerV
     EditText treecode;
 
     private String TAG = MainActivity.class.getSimpleName();
-    private static final String URL = "http://10.80.45.10/api/find_tree";
+   // private static final String URL = "http://192.168.1.5/api/find_tree";
+   private static final String URL = "http://10.80.45.10/api/find_tree";
     ProgressDialog prg ;
 
     private ZXingScannerView mScannerView;

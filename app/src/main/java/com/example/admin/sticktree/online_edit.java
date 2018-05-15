@@ -39,7 +39,8 @@ public class online_edit extends AppCompatActivity {
     EditText treename,localname,character,lat,lng ;
     TextView treecode ;
     private String TAG = online_edit.class.getSimpleName();
-    private static final String URL = "http://192.168.1.6/api/edit";
+   // private static final String URL = "http://192.168.1.6/api/edit";
+    private static final String URL = "http://10.80.45.10/api/edit";
 
     LocationManager locationManager;
     private static final int REQUEST_LOCATION = 1;

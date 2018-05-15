@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tree_name_offline"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:text="ชื่อพรรณไม้"
@@ -31,7 +31,7 @@
             android:layout_height="255dp">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageView1"
                 android:layout_width="match_parent"
                 android:layout_height="162dp"
                 app:srcCompat="@mipmap/ic_launcher" />
@@ -49,80 +49,61 @@
                 android:paddingTop="64dp">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/sciencename_offline"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="ลักษณะ"
+                    android:text="sciencename_offline"
                     android:textAlignment="center"
                     android:padding="10dp"
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/localname_offline"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="ลักษณะ"
+                    android:text="localname_offline"
                     android:textAlignment="center"
                     android:padding="10dp"
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/character_offline"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="ลักษณะ"
-                    android:textAlignment="center"
-                    android:padding="10dp"
-                    android:textSize="15sp" />
-
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="ลักษณะ"
+                    android:text="character_offline"
                     android:textAlignment="center"
                     android:padding="10dp"
                     android:textSize="15sp" />
 
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/typetree_offline"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="ลักษณะ"
+                    android:text="typetree_offline"
                     android:textAlignment="center"
                     android:padding="10dp"
                     android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="ลักษณะ"
-                    android:textAlignment="center"
-                    android:padding="10dp"
-                    android:textSize="15sp" />
+
+
 
 
                 <Button
+                    android:id="@+id/back"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:background="@color/colorAccent"
-                    android:text="เข้าสู่ระบบ"
+                    android:text="กลับ"
                     android:textColor="@color/White" />
 
             </LinearLayout>

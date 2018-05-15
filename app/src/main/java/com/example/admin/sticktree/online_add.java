@@ -77,8 +77,10 @@ public class online_add extends AppCompatActivity implements View.OnClickListene
 
     private static final int REQUEST_STORAGE = 1;
     private String TAG = MainActivity.class.getSimpleName();
-    private static final String URL = "http://192.168.1.5/api/add";
-    private static final String URL2 = "http://192.168.1.5/api/type_tree";
+   // private static final String URL = "http://192.168.1.5/api/add";
+  //  private static final String URL2 = "http://192.168.1.5/api/type_tree";
+    private static final String URL = "http://10.80.45.10/api/add";
+    private static final String URL2 = "http://10.80.45.10/api/type_tree";
 
     LocationManager locationManager;
     private static final int REQUEST_LOCATION = 1;
@@ -516,7 +518,7 @@ public class online_add extends AppCompatActivity implements View.OnClickListene
 
         }catch(Exception ex){
             Log.d(TAG, "Failed Message\t" + ex.toString());
-            Toast.makeText(context, ex.toString(), Toast.LENGTH_LONG).show();
+            Toast.makeText(online_add.this, ex.toString(), Toast.LENGTH_LONG).show();
             //  finish();
         }
 
@@ -526,7 +528,7 @@ public class online_add extends AppCompatActivity implements View.OnClickListene
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         typetree_name = adapterView.getItemAtPosition(i).toString();
-        //Toast.makeText(online_add.this, typetree_name, Toast.LENGTH_SHORT).show();
+        Toast.makeText(online_add.this, typetree_name, Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.example.admin.sticktree;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
@@ -97,7 +98,8 @@ public class online_main extends AppCompatActivity
         }
 
         else if(id == R.id.scanqrcode){
-
+            Intent intent = new Intent(online_main.this,offline_scan.class);
+            startActivity(intent);
 
         }else if (id == R.id.logout) {
 
